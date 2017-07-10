@@ -10,8 +10,11 @@ imagesc(ORG); axis image; % 画像の表示
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_1.jpg?raw=true)  
 図1 原画像  
 ![その2](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_1.jpg?raw=true)  
+図2 その2  
 ![その3](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_2.jpg?raw=true)  
+図3 その3  
 ![その4](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_3.jpg?raw=true)  
+図4 その4  
 ![その5](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_4.jpg?raw=true)  
 ![その6](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_5.jpg?raw=true)  
 ![その7](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_6.jpg?raw=true)  
