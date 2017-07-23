@@ -17,6 +17,19 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_2.jpg?raw=true)  
 図2 1/2サンプリング  
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_3.jpg?raw=true)  
+図3 1/4サンプリング  
+
+1/8から1/32サンプリングは，
+
+IMG = imresize(ORG,0.5); % 画像の縮小  
+IMG2 = imresize(IMG,2,'box'); % 画像の拡大  
+
+を繰り返す．サンプリングの結果を図４～６に示す．
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_4.jpg?raw=true)  
+図4 1/8サンプリング  
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_5.jpg?raw=true)  
+図5 1/16サンプリング  
 ![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_6.jpg?raw=true)  
+図6 1/32サンプリング  
+
+このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生する．
