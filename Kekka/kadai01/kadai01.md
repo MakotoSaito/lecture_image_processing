@@ -14,10 +14,9 @@ IMG = imresize(ORG,0.5); % 画像の縮小
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大  
 
 1/2サンプリングの結果を図２に示す．  
-![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_2.jpg?raw=true) 　
-
-図2 1/2サンプリング    
-![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_3.jpg?raw=true) 　
-![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_4.jpg?raw=true) 　
-![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_5.jpg?raw=true) 　
-![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_6.jpg?raw=true) 　
+![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_2.jpg?raw=true)  
+図2 1/2サンプリング  
+![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_3.jpg?raw=true)  
+![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_4.jpg?raw=true)  
+![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_5.jpg?raw=true)  
+![原画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai01/kadai1_6.jpg?raw=true)  
