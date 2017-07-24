@@ -3,7 +3,7 @@
 判別分析法を用いて画像二値化する.  
 標準画像「ice」を原画像とする.この画像は縦480画素,横640画素の長方形のディジタルカラー画像である.  
 
-ORG=imread('Lenna.png'); % 原画像の入力  
+ORG=imread('ice.jpg'); % 原画像の入力  
 ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換  
 imagesc(ORG); colormap(gray); colorbar;  
 
