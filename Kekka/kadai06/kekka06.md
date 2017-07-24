@@ -1,34 +1,34 @@
-# ‰Û‘è6 ƒŒƒ|[ƒg 
+# èª²é¡Œ6 ãƒ¬ãƒãƒ¼ãƒˆ 
 
-•W€‰æ‘œuicev‚ğŒ´‰æ‘œ‚Æ‚·‚é.‚±‚Ì‰æ‘œ‚Íc480‰æ‘f,‰¡640‰æ‘f‚Ì’·•ûŒ`‚ÌƒfƒBƒWƒ^ƒ‹ƒJƒ‰[‰æ‘œ‚Å‚ ‚é.  
-‰æ‘œ‚Ì
+æ¨™æº–ç”»åƒã€Œiceã€ã‚’åŸç”»åƒã¨ã™ã‚‹.ã“ã®ç”»åƒã¯ç¸¦480ç”»ç´ ,æ¨ª640ç”»ç´ ã®é•·æ–¹å½¢ã®ãƒ‡ã‚£ã‚¸ã‚¿ãƒ«ã‚«ãƒ©ãƒ¼ç”»åƒã§ã‚ã‚‹.  
+ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’å‚è€ƒã¨ã—ã¦,ç”»åƒã®äºŒå€¤åŒ–ã‚’è¡Œã†  
 
-ORG=imread('Lenna.png'); % Œ´‰æ‘œ‚Ì“ü—Í  
-ORG=rgb2gray(ORG); % ƒJƒ‰[‰æ‘œ‚ğ”’•”Z’W‰æ‘œ‚Ö•ÏŠ·  
+ORG=imread('Lenna.png'); % åŸç”»åƒã®å…¥åŠ›  
+ORG=rgb2gray(ORG); % ã‚«ãƒ©ãƒ¼ç”»åƒã‚’ç™½é»’æ¿ƒæ·¡ç”»åƒã¸å¤‰æ›  
 imagesc(ORG); colormap(gray); colorbar;  
 
-‚É‚æ‚Á‚Ä,”’•”Z’W‰æ‘œ‚É•ÏX‚³‚ê‚½Œ‹‰Ê‚ğ}1‚É¦‚·.  
-![”’•”Z’W‰æ‘œ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_00.jpg?raw=true)  
-}1 ”’•”Z’W‰æ‘œ  
+ã«ã‚ˆã£ã¦,ç™½é»’æ¿ƒæ·¡ç”»åƒã«å¤‰æ›´ã•ã‚ŒãŸçµæœã‚’å›³1ã«ç¤ºã™.  
+![ç™½é»’æ¿ƒæ·¡ç”»åƒ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_00.jpg?raw=true)  
+å›³1 ç™½é»’æ¿ƒæ·¡ç”»åƒ  
 
 
-Ÿ‚É,è‡’l‚ğ128‚Æ‚µ‚Ä‚Ì“ñ’l‰»‚ğs‚¤. 
+æ¬¡ã«,é–¾å€¤ã‚’128ã¨ã—ã¦ã®äºŒå€¤åŒ–ã‚’è¡Œã†. 
 
-IMG = ORG>128; % 128‚É‚æ‚é“ñ’l‰»  
-imagesc(IMG); colormap(gray); colorbar; % ‰æ‘œ‚Ì•\¦  
+IMG = ORG>128; % 128ã«ã‚ˆã‚‹äºŒå€¤åŒ–  
+imagesc(IMG); colormap(gray); colorbar; % ç”»åƒã®è¡¨ç¤º  
 pause;  
 
-‚É‚æ‚Á‚Ä,“ñ’l‰»‚³‚ê‚½Œ‹‰Ê‚ğ}2‚É¦‚·.  
-![è‡’l‚É‚æ‚é“ñ’l‰»](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_01.jpg?raw=true)  
-}2 è‡’l‚É‚æ‚é“ñ’l‰»  
+ã«ã‚ˆã£ã¦,äºŒå€¤åŒ–ã•ã‚ŒãŸçµæœã‚’å›³2ã«ç¤ºã™.  
+![é–¾å€¤ã«ã‚ˆã‚‹äºŒå€¤åŒ–](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_01.jpg?raw=true)  
+å›³2 é–¾å€¤ã«ã‚ˆã‚‹äºŒå€¤åŒ–  
 
-ÅŒã‚É,ƒfƒBƒU–@‚É‚æ‚é“ñ’l‰»‚ğs‚¤.  
+æœ€å¾Œã«,ãƒ‡ã‚£ã‚¶æ³•ã«ã‚ˆã‚‹äºŒå€¤åŒ–ã‚’è¡Œã†.  
 
-IMG = dither(ORG); % ƒfƒBƒU–@‚É‚æ‚é“ñ’l‰»  
-imagesc(IMG); colormap(gray); colorbar; % ‰æ‘œ‚Ì•\¦  
+IMG = dither(ORG); % ãƒ‡ã‚£ã‚¶æ³•ã«ã‚ˆã‚‹äºŒå€¤åŒ–  
+imagesc(IMG); colormap(gray); colorbar; % ç”»åƒã®è¡¨ç¤º  
 
-‚É‚æ‚Á‚Ä,“ñ’l‰»‚³‚ê‚½Œ‹‰Ê‚ğ}3‚É¦‚·.  
-![ƒfƒBƒU–@‚É‚æ‚é“ñ’l‰»](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_02.jpg?raw=true)  
-}3 ƒfƒBƒU–@‚É‚æ‚é“ñ’l‰»  
+ã«ã‚ˆã£ã¦,äºŒå€¤åŒ–ã•ã‚ŒãŸçµæœã‚’å›³3ã«ç¤ºã™.  
+![ãƒ‡ã‚£ã‚¶æ³•ã«ã‚ˆã‚‹äºŒå€¤åŒ–](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_02.jpg?raw=true)  
+å›³3 ãƒ‡ã‚£ã‚¶æ³•ã«ã‚ˆã‚‹äºŒå€¤åŒ–  
 
-o—ÍŒ‹‰Ê‚æ‚è,è‡’l‚É‚æ‚é“ñ’l‰»‚Å‚Í‚«‚ê‚¢‚Éo—Í‚Å‚«‚Ä‚¢‚é‚Ì‚É‘Î‚µ,ƒfƒBƒU–@‚Å‚Íüã‚ÌƒmƒCƒY‚Ì‚æ‚¤‚È‚à‚Ì‚ª‘–‚Á‚Ä‚¢‚é‚±‚Æ‚ª‚í‚©‚é.  
+å‡ºåŠ›çµæœã‚ˆã‚Š,é–¾å€¤ã«ã‚ˆã‚‹äºŒå€¤åŒ–ã§ã¯ãã‚Œã„ã«å‡ºåŠ›ã§ãã¦ã„ã‚‹ã®ã«å¯¾ã—,ãƒ‡ã‚£ã‚¶æ³•ã§ã¯ç·šä¸Šã®ãƒã‚¤ã‚ºã®ã‚ˆã†ãªã‚‚ã®ãŒèµ°ã£ã¦ã„ã‚‹ã“ã¨ãŒã‚ã‹ã‚‹.  
