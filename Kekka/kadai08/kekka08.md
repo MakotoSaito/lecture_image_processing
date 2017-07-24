@@ -25,6 +25,7 @@ imagesc(IMG); colormap(gray); colorbar; % 画像の表示
 
 IMG = bwlabeln(IMG); 
 imagesc(IMG); colormap(jet); colorbar; % 画像の表示  
+
 その結果を図3に示す.  
 ![連結要素のラベル付け](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai08/kadai08_02.jpg?raw=true)  
 図3 連結要素のラベル付け  
