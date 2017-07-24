@@ -1,33 +1,33 @@
-# ‰Û‘è5 ƒŒƒ|[ƒg 
+# èª²é¡Œ5 ãƒ¬ãƒãƒ¼ãƒˆ 
 
-”»•Ê•ªÍ–@‚ğ—p‚¢‚Ä‰æ‘œ“ñ’l‰»‚·‚é.  
-•W€‰æ‘œuicev‚ğŒ´‰æ‘œ‚Æ‚·‚é.‚±‚Ì‰æ‘œ‚Íc480‰æ‘f,‰¡640‰æ‘f‚Ì’·•ûŒ`‚ÌƒfƒBƒWƒ^ƒ‹ƒJƒ‰[‰æ‘œ‚Å‚ ‚é.  
+åˆ¤åˆ¥åˆ†ææ³•ã‚’ç”¨ã„ã¦ç”»åƒäºŒå€¤åŒ–ã™ã‚‹.  
+æ¨™æº–ç”»åƒã€Œiceã€ã‚’åŸç”»åƒã¨ã™ã‚‹.ã“ã®ç”»åƒã¯ç¸¦480ç”»ç´ ,æ¨ª640ç”»ç´ ã®é•·æ–¹å½¢ã®ãƒ‡ã‚£ã‚¸ã‚¿ãƒ«ã‚«ãƒ©ãƒ¼ç”»åƒã§ã‚ã‚‹.  
 
-ORG=imread('Lenna.png'); % Œ´‰æ‘œ‚Ì“ü—Í  
-ORG=rgb2gray(ORG); % ƒJƒ‰[‰æ‘œ‚ğ”’•”Z’W‰æ‘œ‚Ö•ÏŠ·  
+ORG=imread('Lenna.png'); % åŸç”»åƒã®å…¥åŠ›  
+ORG=rgb2gray(ORG); % ã‚«ãƒ©ãƒ¼ç”»åƒã‚’ç™½é»’æ¿ƒæ·¡ç”»åƒã¸å¤‰æ›  
 imagesc(ORG); colormap(gray); colorbar;  
 
-‚É‚æ‚Á‚Ä,”’•”Z’W‰æ‘œ‚É•ÏX‚³‚ê‚½Œ‹‰Ê‚ğ}1‚É¦‚·.  
-![”’•”Z’W‰æ‘œ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadai05_2chi.jpg?raw=true)  
-}1 ”’•”Z’W‰æ‘œ  
+ã«ã‚ˆã£ã¦,ç™½é»’æ¿ƒæ·¡ç”»åƒã«å¤‰æ›´ã•ã‚ŒãŸçµæœã‚’å›³1ã«ç¤ºã™.  
+![ç™½é»’æ¿ƒæ·¡ç”»åƒ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadai05_2chi.jpg?raw=true)  
+å›³1 ç™½é»’æ¿ƒæ·¡ç”»åƒ  
 
-‚»‚ÌŒã,”»•Ê•ªÍ–@‚ğ—p‚¢‚Ä‰æ‘œ‚Ì“ñ’l‰»‚ğs‚¤.  
+ãã®å¾Œ,åˆ¤åˆ¥åˆ†ææ³•ã‚’ç”¨ã„ã¦ç”»åƒã®äºŒå€¤åŒ–ã‚’è¡Œã†.  
 
-H = imhist(ORG); %ƒqƒXƒgƒOƒ‰ƒ€‚Ìƒf[ƒ^‚ğ—ñƒxƒNƒgƒ‹E‚ÉŠi”[  
+H = imhist(ORG); %ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã®ãƒ‡ãƒ¼ã‚¿ã‚’åˆ—ãƒ™ã‚¯ãƒˆãƒ«Eã«æ ¼ç´  
 myu_T = mean(H);  
 max_val = 0;  
 max_thres = 1;  
 for i=1:255  
-C1 = H(1:i); %ƒqƒXƒgƒOƒ‰ƒ€‚ğ2‚Â‚ÌƒNƒ‰ƒX‚É•ª‚¯‚é  
+C1 = H(1:i); %ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã‚’2ã¤ã®ã‚¯ãƒ©ã‚¹ã«åˆ†ã‘ã‚‹  
 C2 = H(i+1:256);  
-n1 = sum(C1); %‰æ‘f”‚ÌZo  
+n1 = sum(C1); %ç”»ç´ æ•°ã®ç®—å‡º  
 n2 = sum(C2);  
-myu1 = mean(C1); %•½‹Ï’l‚ÌZo  
+myu1 = mean(C1); %å¹³å‡å€¤ã®ç®—å‡º  
 myu2 = mean(C2);  
-sigma1 = var(C1); %•ªU‚ÌZo  
+sigma1 = var(C1); %åˆ†æ•£ã®ç®—å‡º  
 sigma2 = var(C2);  
-sigma_w = (n1 *sigma1+n2*sigma2)/(n1+n2); %ƒNƒ‰ƒX“à•ªU‚ÌZo  
-sigma_B = (n1 *(myu1-myu_T)^2+n2*(myu2-myu_T)^2)/(n1+n2); %ƒNƒ‰ƒXŠÔ•ªU‚ÌZo  
+sigma_w = (n1 *sigma1+n2*sigma2)/(n1+n2); %ã‚¯ãƒ©ã‚¹å†…åˆ†æ•£ã®ç®—å‡º  
+sigma_B = (n1 *(myu1-myu_T)^2+n2*(myu2-myu_T)^2)/(n1+n2); %ã‚¯ãƒ©ã‚¹é–“åˆ†æ•£ã®ç®—å‡º  
 if max_val<sigma_B/sigma_w  
 max_val = sigma_B/sigma_w;  
 max_thres =i;  
@@ -37,8 +37,8 @@ end;
 IMG = ORG > max_thres;
 imagesc(IMG); colormap(gray); colorbar;
 
-‚É‚æ‚Á‚Ä,“ñ’l‰»‚³‚ê‚½‰æ‘œ‚ğ}2‚É¦‚·
-![”’•”Z’W‰æ‘œ“ñ’l‰»](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadia05_noutan.jpg?raw=true)  
-}2 ”’•”Z’W‰æ‘œ“ñ’l‰»  
+ã«ã‚ˆã£ã¦,äºŒå€¤åŒ–ã•ã‚ŒãŸç”»åƒã‚’å›³2ã«ç¤ºã™  
+![ç™½é»’æ¿ƒæ·¡ç”»åƒäºŒå€¤åŒ–](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadia05_noutan.jpg?raw=true)  
+å›³2 ç™½é»’æ¿ƒæ·¡ç”»åƒäºŒå€¤åŒ–  
 
-Œ‹‰Ê‚æ‚è,”Z’W‚Å‚ ‚Á‚½‰æ‘œ‚ª”’•‚Ì‚İ‚Ì‚É‚È‚Á‚Ä‚¢‚é‚±‚Æ‚ª‚í‚©‚é.  
+çµæœã‚ˆã‚Š,æ¿ƒæ·¡ã§ã‚ã£ãŸç”»åƒãŒç™½é»’ã®ã¿ã®ã«ãªã£ã¦ã„ã‚‹ã“ã¨ãŒã‚ã‹ã‚‹.  
