@@ -31,4 +31,4 @@ imagesc(IMG); colormap(gray); colorbar; % 画像の表示
 ![ディザ法による二値化](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai06/kadai06_02.jpg?raw=true)  
 図3 ディザ法による二値化  
 
-出力結果より,閾値による二値化ではきれいに出力できているのに対し,ディザ法では線上のノイズのようなものが走っていることがわかる.  
+出力結果より,閾値による二値化ではきれいに出力できているのに対し,ディザ法ではブロック状のノイズのようなものが走っていることがわかる.  
