@@ -1,52 +1,52 @@
-# ‰Ы‘и1 ѓЊѓ|Ѓ[ѓg
+# иЄІйЎЊ1 гѓ¬гѓќгѓјгѓ€
 
-•WЏЂ‰ж‘њЃuiceЃv‚рЊґ‰ж‘њ‚Ж‚·‚й.‚±‚М‰ж‘њ‚НЏc480‰ж‘f,‰Ў640‰ж‘f‚М’·•ыЊ`‚МѓfѓBѓWѓ^ѓ‹ѓJѓ‰Ѓ[‰ж‘њ‚Е‚ ‚й.  
+жЁ™жє–з”»еѓЏгЂЊiceгЂЌг‚’еЋџз”»еѓЏгЃЁгЃ™г‚‹.гЃ“гЃ®з”»еѓЏгЃЇзё¦480з”»зґ ,жЁЄ640з”»зґ гЃ®й•·ж–№еЅўгЃ®гѓ‡г‚Јг‚ёг‚їгѓ«г‚«гѓ©гѓјз”»еѓЏгЃ§гЃ‚г‚‹.  
 
-ORG=imread('Lenna.png'); % Њґ‰ж‘њ‚М“ь—Н  
-ORG= rgb2gray(ORG); % ѓJѓ‰Ѓ[‰ж‘њ‚р”’Ќ•”Z’W‰ж‘њ‚Ц•ПЉ·  
-imagesc(ORG); colormap(gray); colorbar; % ‰ж‘њ‚М•\Ћ¦  
+ORG=imread('ice.jpg'); % еЋџз”»еѓЏгЃ®е…ҐеЉ›  
+ORG= rgb2gray(ORG); % г‚«гѓ©гѓјз”»еѓЏг‚’з™Ѕй»’жїѓж·Ўз”»еѓЏгЃёе¤‰жЏ›  
+imagesc(ORG); colormap(gray); colorbar; % з”»еѓЏгЃ®иЎЁз¤є  
 
-‚Й‚ж‚Б‚Д,Њґ‰ж‘њ‚р“З‚ЭЌћ‚Э,ѓJѓ‰Ѓ[‰ж‘њ‚р”’Ќ•”Z’W‰ж‘њ‚Ц•ПЉ·,•\Ћ¦‚µ‚ЅЊ‹‰К‚рђ}1‚ЙЋ¦‚·.  
-![”’Ќ•”Z’W‰ж‘њ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_0_noutan.jpg?waw=true)  
-ђ}1 ”’Ќ•”Z’W‰ж‘њ  
+гЃ«г‚€гЃЈгЃ¦,еЋџз”»еѓЏг‚’иЄ­гЃїиѕјгЃї,г‚«гѓ©гѓјз”»еѓЏг‚’з™Ѕй»’жїѓж·Ўз”»еѓЏгЃёе¤‰жЏ›,иЎЁз¤єгЃ—гЃџзµђжћњг‚’е›і1гЃ«з¤єгЃ™.  
+![з™Ѕй»’жїѓж·Ўз”»еѓЏ](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_0_noutan.jpg?waw=true)  
+е›і1 з™Ѕй»’жїѓж·Ўз”»еѓЏ  
 
 
-Ћџ‚Н‹P“x’l‚Й‚ж‚Б‚Д‰ж‘f‚ЙЏ€—ќ‚р•П‚¦‚й.  
-‚Н‚¶‚Я‚Й,‹P“x’l‚Є64€ИЏг‚М‰ж‘f‚р1ЃC‚»‚М‘ј‚р0‚Й•ПЉ·‚Ж‚µ‚ЅЏ€—ќ‚р—^‚¦‚й.  
+ж¬ЎгЃЇијќеє¦еЂ¤гЃ«г‚€гЃЈгЃ¦з”»зґ гЃ«е‡¦зђ†г‚’е¤‰гЃ€г‚‹.  
+гЃЇгЃг‚ЃгЃ«,ијќеє¦еЂ¤гЃЊ64д»ҐдёЉгЃ®з”»зґ г‚’1пјЊгЃќгЃ®д»–г‚’0гЃ«е¤‰жЏ›гЃЁгЃ—гЃџе‡¦зђ†г‚’дёЋгЃ€г‚‹.  
 
-IMG = ORG > 64; % ‹P“x’l‚Є64€ИЏг‚М‰ж‘f‚р1ЃC‚»‚М‘ј‚р0‚Й•ПЉ·
+IMG = ORG > 64; % ијќеє¦еЂ¤гЃЊ64д»ҐдёЉгЃ®з”»зґ г‚’1пјЊгЃќгЃ®д»–г‚’0гЃ«е¤‰жЏ›
 imagesc(IMG); colormap(gray); colorbar;  
 
-‚»‚МЊ‹‰К‚рђ}2‚ЙЋ¦‚·.  
-![”’Ќ•”Z’W‰ж‘њ 64](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_64.jpg?waw=true)  
-ђ}2 ”’Ќ•”Z’W‰ж‘њ 64  
+гЃќгЃ®зµђжћњг‚’е›і2гЃ«з¤єгЃ™.  
+![з™Ѕй»’жїѓж·Ўз”»еѓЏ 64](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_64.jpg?waw=true)  
+е›і2 з™Ѕй»’жїѓж·Ўз”»еѓЏ 64  
 
 
-Ћџ‚Й,‹P“x’l‚Є96€ИЏг‚М‰ж‘f‚р1ЃC‚»‚М‘ј‚р0‚Й•ПЉ·‚Ж‚µ‚ЅЏ€—ќ‚р—^‚¦‚й.  
+ж¬ЎгЃ«,ијќеє¦еЂ¤гЃЊ96д»ҐдёЉгЃ®з”»зґ г‚’1пјЊгЃќгЃ®д»–г‚’0гЃ«е¤‰жЏ›гЃЁгЃ—гЃџе‡¦зђ†г‚’дёЋгЃ€г‚‹.  
 
 IMG = ORG > 96;  
 imagesc(IMG); colormap(gray); colorbar;  
 
-‚»‚МЊ‹‰К‚рђ}3‚ЙЋ¦‚·.  
-![”’Ќ•”Z’W‰ж‘њ 96](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_96.jpg?waw=true)  
-ђ}3 ”’Ќ•”Z’W‰ж‘њ 96  
+гЃќгЃ®зµђжћњг‚’е›і3гЃ«з¤єгЃ™.  
+![з™Ѕй»’жїѓж·Ўз”»еѓЏ 96](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_96.jpg?waw=true)  
+е›і3 з™Ѕй»’жїѓж·Ўз”»еѓЏ 96  
 
-Ћџ‚Й,‹P“x’l‚Є128€ИЏг‚М‰ж‘f‚р1ЃC‚»‚М‘ј‚р0‚Й•ПЉ·‚Ж‚µ‚ЅЏ€—ќ‚р—^‚¦‚й.  
+ж¬ЎгЃ«,ијќеє¦еЂ¤гЃЊ128д»ҐдёЉгЃ®з”»зґ г‚’1пјЊгЃќгЃ®д»–г‚’0гЃ«е¤‰жЏ›гЃЁгЃ—гЃџе‡¦зђ†г‚’дёЋгЃ€г‚‹.  
 
 IMG = ORG > 128;  
 imagesc(IMG); colormap(gray); colorbar;  
 
-‚»‚МЊ‹‰К‚рђ}4‚ЙЋ¦‚·.  
-![”’Ќ•”Z’W‰ж‘њ 128](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_128.jpg?waw=true)  
-ђ}4 ”’Ќ•”Z’W‰ж‘њ 128  
+гЃќгЃ®зµђжћњг‚’е›і4гЃ«з¤єгЃ™.  
+![з™Ѕй»’жїѓж·Ўз”»еѓЏ 128](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_128.jpg?waw=true)  
+е›і4 з™Ѕй»’жїѓж·Ўз”»еѓЏ 128  
 
-ЌЕЊг‚Й,‹P“x’l‚Є192€ИЏг‚М‰ж‘f‚р1ЃC‚»‚М‘ј‚р0‚Й•ПЉ·‚Ж‚µ‚ЅЏ€—ќ‚р—^‚¦‚й.  
+жњЂеѕЊгЃ«,ијќеє¦еЂ¤гЃЊ192д»ҐдёЉгЃ®з”»зґ г‚’1пјЊгЃќгЃ®д»–г‚’0гЃ«е¤‰жЏ›гЃЁгЃ—гЃџе‡¦зђ†г‚’дёЋгЃ€г‚‹.  
 
 IMG = ORG > 192;  
 imagesc(IMG); colormap(gray); colorbar;  
 
-‚»‚МЊ‹‰К‚рђ}5‚ЙЋ¦‚·.  
-![”’Ќ•”Z’W‰ж‘њ 192](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_192.jpg?waw=true)  
-ђ}5 ”’Ќ•”Z’W‰ж‘њ 192  
+гЃќгЃ®зµђжћњг‚’е›і5гЃ«з¤єгЃ™.  
+![з™Ѕй»’жїѓж·Ўз”»еѓЏ 192](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai03/kadai3_192.jpg?waw=true)  
+е›і5 з™Ѕй»’жїѓж·Ўз”»еѓЏ 192  
 
-‹P“x’l‚Ми‡’l‚рЌ‚‚­‚·‚й‚±‚Ж‚Й‚ж‚Б‚Д,ЏрЊЏ‚Й‚©‚©‚йђ”’l‚Є‘Ѕ‚­‚И‚и,Њ‹‰К‚Ж‚µ‚Д‰ж‘њ‚ЄЌ•‚­‚И‚й‰ж‘f‚Є‘Ѕ‚­‚И‚й‚±‚Ж‚Є‚н‚©‚й.  
+ијќеє¦еЂ¤гЃ®й–ѕеЂ¤г‚’й«гЃЏгЃ™г‚‹гЃ“гЃЁгЃ«г‚€гЃЈгЃ¦,жќЎд»¶гЃ«гЃ‹гЃ‹г‚‹ж•°еЂ¤гЃЊе¤љгЃЏгЃЄг‚Љ,зµђжћњгЃЁгЃ—гЃ¦з”»еѓЏгЃЊй»’гЃЏгЃЄг‚‹з”»зґ гЃЊе¤љгЃЏгЃЄг‚‹гЃ“гЃЁгЃЊг‚ЏгЃ‹г‚‹.  
