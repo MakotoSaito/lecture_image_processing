@@ -8,7 +8,7 @@ ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
 imagesc(ORG); colormap(gray); colorbar;  
 
 によって,白黒濃淡画像に変更された結果を図1に示す.  
-![白黒濃淡画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadai05_2chi.jpg?raw=true)  
+![白黒濃淡画像](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadia05_noutan.jpg?raw=true)  
 図1 白黒濃淡画像  
 
 その後,判別分析法を用いて画像の二値化を行う.  
@@ -38,7 +38,7 @@ IMG = ORG > max_thres;
 imagesc(IMG); colormap(gray); colorbar;
 
 によって,二値化された画像を図2に示す  
-![白黒濃淡画像二値化](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadia05_noutan.jpg?raw=true)  
+![白黒濃淡画像二値化](https://github.com/MakotoSaito/lecture_image_processing/blob/master/Kekka/kadai05/kadai05_2chi.jpg?raw=true)  
 図2 白黒濃淡画像二値化  
 
 結果より,濃淡であった画像が白黒のみのになっていることがわかる.  
